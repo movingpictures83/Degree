@@ -2,6 +2,7 @@
 # Language: C++
 # Input: CSV (network)
 # Output: NOA (central nodes and centrality values)
+# Tested with: PluMA 1.0, g++ 4.8
 
 PluMA plugin to compute degree centrality (Freeman, 1979), which will find the 
 most important nodes in a network based on node degree.  This particular version
