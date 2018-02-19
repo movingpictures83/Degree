@@ -64,7 +64,6 @@ void DegreePlugin::input(std::string file) {
 }
 
 void DegreePlugin::run() {
-   std::cout << "I am running Degree" << std::endl;
    U.resize(GSIZE, 0.0);
 
                 for (int i = 0; i < GSIZE; i++)
@@ -102,7 +101,7 @@ for (int i = GSIZE-1; i >= 0; i--)
               max = fabs(U[i]);
            if (fabs(U[i]) < min)
               min = fabs(U[i]);
-           std::cout << bacteria[i] << ": " << U[i] << std::endl;
+           PluginManager::log(std::string(bacteria[i]+": "+std::to_string(U[i])));
            noafile << bacteria[i] << "\t" << U[i] << "\t\t" << GSIZE-i << endl;
         }
 
