@@ -1,0 +1,2 @@
+Prefix plugins/Degree/example/
+Plugin Degree inputfile corrP.csv outputfile corrP.noa
